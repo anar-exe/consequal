@@ -1,0 +1,72 @@
+.footer {
+  background: var(--footer-bg);
+  border-top: 1px solid var(--glass-border);
+  padding: 4rem 0 2rem;
+  margin-top: 6rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand h2 {
+  font-family: 'Planet Kosmos', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand .accent {
+  color: var(--accent-primary);
+}
+
+.footer-brand p {
+  color: var(--text-secondary);
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.link-group h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.link-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link-group a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.link-group a:hover {
+  color: var(--accent-blue);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--glass-border);
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,143 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 2rem 0;
+}
+
+.header.scrolled {
+  padding: 1rem 0;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: var(--glass-bg);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  font-family: 'Planet Kosmos', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.logo .accent {
+  color: var(--accent-primary);
+}
+
+/* Desktop Nav */
+.desktop-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.desktop-nav a {
+  font-weight: 500;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.desktop-nav a:hover {
+  opacity: 1;
+  color: var(--accent-secondary);
+}
+
+.btn-sm {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  background: var(--glass-hover);
+  color: var(--accent-secondary);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100vh;
+  background: var(--bg-color);
+  border-left: 1px solid var(--glass-border);
+  transition: right 0.3s ease;
+  padding: 6rem 2rem 2rem;
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.mobile-drawer.active {
+  right: 0;
+}
+
+.mobile-drawer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-drawer a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mobile-drawer a:hover {
+  color: var(--accent-secondary);
+}
+
+.mobile-drawer .nav-contact {
+  margin-top: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Keep above drawer */
+  }
+}
