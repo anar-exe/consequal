@@ -9,7 +9,7 @@ export const siteConfig = {
 // Add your social media URLs here
 export const socialLinks = [
   { id: 1, platform: "Instagram", url: "https://instagram.com/consequal/" },
-  { id: 2, platform: "Twitter/X", url: "https://twitter.com" },
+  { id: 2, platform: "Telegram", url: "https://t.me/consequalx" },
   { id: 3, platform: "SoundCloud", url: "https://soundcloud.com/consequal/" },
   { id: 4, platform: "Spotify", url: "https://spotify.com" },
 ];
