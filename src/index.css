@@ -114,12 +114,12 @@ ul {
 section {
   padding-top: 12rem;
   padding-bottom: 12rem;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
 }
 
 .section-title {
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin: 2rem 0;
   text-align: center;
   background: var(--accent-gradient);
   -webkit-background-clip: text;

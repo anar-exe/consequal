@@ -34,6 +34,7 @@ const Footer = () => {
       
       <div className="footer-bottom container">
         <p>&copy; {siteConfig.copyrightYear} {siteConfig.brandName} All Rights Reserved.</p>
+        <p>created by <a href="https://github.com/anar-exe" target="_blank">anar-exe</a></p>
       </div>
     </footer>
   );

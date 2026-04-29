@@ -12,7 +12,7 @@ const HeroSection = () => {
       
       <div className="container hero-content">
         <div className="hero-text animate-fade-in">
-          <h5>NEW SOUND, NEW VISION</h5>
+          {/* <h5>NEW SOUND, NEW VISION</h5> */}
           <h1 className="hero-title" style={{ whiteSpace: 'pre-line' }}>
             {siteConfig.heroTitle}
           </h1>

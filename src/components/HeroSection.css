@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 80px; /* offset for header */
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -77,6 +77,7 @@
   color: var(--text-secondary);
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
+  white-space: pre-line;
 }
 
 .hero-actions {
@@ -120,20 +121,64 @@
 }
 
 /* Creating individual wave heights */
-.soundwave span:nth-child(1) { height: 20%; animation-delay: 0.1s; }
-.soundwave span:nth-child(2) { height: 60%; animation-delay: 0.2s; }
-.soundwave span:nth-child(3) { height: 100%; animation-delay: 0.3s; }
-.soundwave span:nth-child(4) { height: 40%; animation-delay: 0.4s; }
-.soundwave span:nth-child(5) { height: 80%; animation-delay: 0.5s; }
-.soundwave span:nth-child(6) { height: 30%; animation-delay: 0.6s; }
-.soundwave span:nth-child(7) { height: 90%; animation-delay: 0.7s; }
-.soundwave span:nth-child(8) { height: 50%; animation-delay: 0.8s; }
-.soundwave span:nth-child(9) { height: 70%; animation-delay: 0.9s; }
-.soundwave span:nth-child(10) { height: 30%; animation-delay: 1.0s; }
+.soundwave span:nth-child(1) {
+  height: 20%;
+  animation-delay: 0.1s;
+}
+
+.soundwave span:nth-child(2) {
+  height: 60%;
+  animation-delay: 0.2s;
+}
+
+.soundwave span:nth-child(3) {
+  height: 100%;
+  animation-delay: 0.3s;
+}
+
+.soundwave span:nth-child(4) {
+  height: 40%;
+  animation-delay: 0.4s;
+}
+
+.soundwave span:nth-child(5) {
+  height: 80%;
+  animation-delay: 0.5s;
+}
+
+.soundwave span:nth-child(6) {
+  height: 30%;
+  animation-delay: 0.6s;
+}
+
+.soundwave span:nth-child(7) {
+  height: 90%;
+  animation-delay: 0.7s;
+}
+
+.soundwave span:nth-child(8) {
+  height: 50%;
+  animation-delay: 0.8s;
+}
+
+.soundwave span:nth-child(9) {
+  height: 70%;
+  animation-delay: 0.9s;
+}
+
+.soundwave span:nth-child(10) {
+  height: 30%;
+  animation-delay: 1.0s;
+}
 
 @keyframes equalize {
-  0% { transform: scaleY(0.3); }
-  100% { transform: scaleY(1); }
+  0% {
+    transform: scaleY(0.3);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 @media (max-width: 992px) {
@@ -141,11 +186,11 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .hero-actions {
     justify-content: center;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
@@ -155,6 +200,7 @@
   .hero-title {
     font-size: 2.5rem;
   }
+
   .hero-actions {
     flex-direction: column;
     gap: 1rem;
